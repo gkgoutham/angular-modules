@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ChartjsModule, FlotModule, InlineModule, UplotModule } from 'my-module-a';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +11,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartjsModule,
+    InlineModule,
+    UplotModule,
+    FlotModule
   ],
   providers: [],
   bootstrap: [AppComponent]
