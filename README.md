@@ -25,3 +25,67 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+GRC-App
+	- Login
+	- Home Page
+		- Module A
+			- Functionality 1
+			- Functionality 2
+		- Moduel B
+			- Functionality 1
+			- Functionality 2
+			- Reports
+		- Module C
+			-	
+		- Module D
+			- ....
+			
+
+Create Main Application 
+	- $ ng new my-app
+	- $ cd my-app
+	- $ npm i jquery
+	- $ npm i bootstrap
+	- $ npm install ../my-module-a/dist/my-module-a-0.0.0.tgz
+	- $ ng serve
+
+
+Create Feature Module
+	- $ ng new my-module-a
+	-  cd my-module-a/
+ 	-  npm i jquery
+ 	-  npm i bootstrap
+ 	-  ng g module chartjs
+	-  ng g module flot
+ 	-  ng g module inline
+ 	-  ng g module uplot
+ 	- ng g component --module chartjs chart 
+ 	-  ng g component --module flot floating-chart
+ 	-  ng g component --module inline inline-chart
+ 	-  ng g component --module uplot plot-chart
+ 	-  ng serve
+ 	-  npm install ng-packagr --save-dev
+ 	- npm run packagr
+ 	- cd dist/
+ 	-  ls
+ 	- npm pack
+
+Create Feature Module
+	- $ ng new my-module-b
+	-  cd my-module-b/
+ 	-  npm i jquery
+ 	-  npm i bootstrap
+ 	-  ng g module project
+	-  ng g module profile
+ 	- ng g component --module project add 
+ 	-  ng g component --module project edit
+ 	-  ng g component --module project view
+ 	-  ng g component --module profile details
+ 	-  ng serve
+ 	-  npm install ng-packagr --save-dev
+ 	- npm run packagr
+ 	- cd dist/
+ 	-  ls
+ 	- npm pack
