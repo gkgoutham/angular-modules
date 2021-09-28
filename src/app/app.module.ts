@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ChartjsModule, FlotModule, InlineModule, UplotModule } from 'my-module-a';
+import { ChartjsModule, FlotModule, InlineModule, MenuModule, UplotModule } from 'my-module-a';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,7 +15,8 @@ import { AppComponent } from './app.component';
     ChartjsModule,
     InlineModule,
     UplotModule,
-    FlotModule
+    FlotModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

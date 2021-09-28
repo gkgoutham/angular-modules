@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MenuComponent } from 'my-module-a/src/app/menu/menu.component';
 
 const routes: Routes = [
   { path: 'chartjs', loadChildren: () => import('my-module-a').then(m => m.ChartjsModule) },
